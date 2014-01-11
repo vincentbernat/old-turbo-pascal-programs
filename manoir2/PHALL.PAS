@@ -1,0 +1,152 @@
+UNIT Phall;
+INTERFACE
+USES graph,piece;
+
+procedure d_hall;
+
+IMPLEMENTATION
+
+VAR bord,couleur:integer;
+
+procedure d_hall;
+begin
+endroit:='HALL';
+couleur:=1;
+Cleardevice;
+setcolor(3);
+RECTANGLE(15,16,304,177);
+RECTANGLE(16,95,67,173);
+LINE(17,95,52,65);
+LINE(67,95,97,69);
+LINE(98,68,67,94);
+LINE(68,173,103,146);
+LINE(98,69,98,150);
+LINE(98,150,98,68);
+LINE(98,69,48,69);
+LINE(84,160,84,80);
+setfillstyle(9,3);
+floodfill(80,150,3);
+floodfill(86,150,3);
+setfillpattern(fill1,3);
+setfillstyle(12,3);
+floodfill(18,97,3);
+setfillpattern(fill2,3);
+setfillstyle(12,3);
+floodfill(19,94,3);
+setcolor(1);LINE(84,160,84,80);setcolor(2);
+if not(tableau) then
+                begin
+                LINE(33,126,42,110);
+                LINE(42,110,50,126);
+                RECTANGLE(33,126,51,145);
+                RECTANGLE(36,129,48,142);
+                setfillstyle(1,0);
+                floodfill(34,127,2);
+                floodfill(37,130,2);
+                setcolor(1);
+                PUTPIXEL(37,137,Couleur);
+                PUTPIXEL(38,137,Couleur);
+                PUTPIXEL(39,136,Couleur);
+                PUTPIXEL(40,135,Couleur);
+                PUTPIXEL(41,135,Couleur);
+                PUTPIXEL(42,135,Couleur);
+                PUTPIXEL(43,135,Couleur);
+                PUTPIXEL(44,135,Couleur);
+                PUTPIXEL(45,135,Couleur);
+                PUTPIXEL(46,136,Couleur);
+                PUTPIXEL(47,137,Couleur);
+                end;
+ELLIPSE(79,126,0,360,1,2);
+ELLIPSE(89,123,0,360,0,2);
+setcolor(3);
+LINE(98,111,149,65);
+LINE(304,169,212,69);
+RECTANGLE(212,68,148,27);
+LINE(156,51,162,51);
+LINE(148,27,15,16);
+LINE(213,27,303,17);
+RECTANGLE(153,34,174,68);
+if not(epee) then
+             begin
+             LINE(187,41,196,53);
+             LINE(187,46,192,41);
+             LINE(189,43,186,41);
+             LINE(190,43,187,40);
+             end;
+PUTPIXEL(191,47,Couleur);
+PUTPIXEL(190,47,Couleur);
+PUTPIXEL(190,48,Couleur);
+PUTPIXEL(191,48,Couleur);
+PUTPIXEL(192,46,Couleur);
+PUTPIXEL(192,45,Couleur);
+RECTANGLE(268,155,271,107);
+setfillstyle(9,3);
+floodfill(269,108,3);
+floodfill(270,154,3);
+LINE(268,155,263,159);
+LINE(271,155,276,159);
+LINE(268,107,261,107);
+LINE(261,107,259,105);
+LINE(259,105,259,102);
+LINE(272,107,279,107);
+LINE(279,107,281,105);
+LINE(281,105,281,103);
+LINE(273,107,272,110);
+LINE(276,107,272,113);
+LINE(278,108,272,117);
+LINE(274,109,276,110);
+LINE(272,110,274,114);
+LINE(275,114,275,122);
+ELLIPSE(275,125,0,360,2,2);
+LINE(277,124,279,122);
+LINE(279,122,281,124);
+LINE(278,126,281,126);
+LINE(277,126,282,126);
+LINE(282,126,281,128);
+LINE(276,127,279,129);
+LINE(279,129,278,131);
+LINE(273,124,272,122);
+LINE(273,125,271,125);
+LINE(273,127,273,130);
+LINE(273,130,275,130);
+LINE(234,80,235,36);
+LINE(235,36,268,33);
+LINE(268,33,268,89);
+LINE(268,89,235,79);
+LINE(234,79,267,79);
+{grille}
+if grille then
+               begin
+               LINE(240,37,240,80);
+               LINE(243,35,243,81);
+               LINE(246,35,246,81);
+               LINE(249,36,249,83);
+               LINE(251,36,252,35);
+               LINE(252,35,252,83);
+               LINE(237,36,237,79);
+               LINE(254,34,254,85);
+               LINE(256,34,256,85);
+               LINE(259,34,259,86);
+               LINE(262,34,262,87);
+               LINE(265,34,265,87);
+               end;
+setfillpattern(tapis,1);
+setfillstyle(12,1);
+floodfill(160,100,3);
+setfillstyle(11,2);
+floodfill(20,30,3);
+floodfill(300,30,3);
+floodfill(200,40,3);
+PUTPIXEL(191,47,couleur);
+PUTPIXEL(190,47,couleur);
+PUTPIXEL(190,48,couleur);
+PUTPIXEL(191,48,Couleur);
+PUTPIXEL(192,46,Couleur);
+PUTPIXEL(192,45,Couleur);
+end;
+
+
+begin
+bord:=3;
+couleur:=3;
+end.

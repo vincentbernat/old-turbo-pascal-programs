@@ -28,11 +28,11 @@ small and allow one to quickly test a program without compiling it.
 Programs
 --------
 
- - `castle/`: an unfinished castle adventure.
+ - `castle/`: an unfinished castle adventure (see the screenshot below).
  - `diamant/`: an unfinished reimplementation of [Boulder Dash][].
  - `fantome/`: an illustrated adventure game, a la Zork.
  - `geo/`: a program to learn major French cities.
- - `manoir/`: a point and click adventure game in an haunted mansion.
+ - `manoir/`: a point and click adventure game in an haunted mansion (see the screenshot below).
  - `manoir2/`: the sequel to the previous game.
  - `martiens/`: a game where you need to prevent an ET to land.
  - `morse/`: translate keys to morse code.
@@ -41,7 +41,7 @@ Programs
  - `resist/`: a program to train to read resistor values using the
    appropriate color codes.
  - `space/`: a game where you need to fly through screen without
-   colliding with other objects
+   colliding with other objects (see the screenshot below).
  - `thedraw/`: a drawing program. The menu can be displayed with a
    right-click.
  - `think/`: some game but I didn't remember the purpose. Cool
@@ -49,3 +49,9 @@ Programs
  - `water-po/`: a water polo game.
 
 [Boulder Dash]: http://en.wikipedia.org/wiki/Boulder_Dash
+
+Here are a few screenshots:
+
+![Screenshot of "castle"](castle_000.png "Screenshot of castle")
+![Screenshot of "manoir2"](manoir2_000.png "Screenshot of manoir2")
+![Screenshot of "space"](space_000.png "Screenshot of space")

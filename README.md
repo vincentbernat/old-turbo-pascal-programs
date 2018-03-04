@@ -18,12 +18,14 @@ Use
 ---
 
 Each directory contains a program. I also provide the appropriate
-version of Turbo Pascal in `TP/`. This is by no mean legal, but I
-don't think anyone will care. The best way to use all that is
-[DOSBox][]. The compiled executables are also provided since they are
-small and allow one to quickly test a program without compiling it.
+version of Turbo Pascal 5.5 in `TP/`. This is by no mean legal, but I
+don't think anyone will care (also, it seems Borland [released it for
+free][] in 2002). The best way to use all that is [DOSBox][]. The
+compiled executables are also provided since they are small and allow
+one to quickly test a program without compiling it.
 
 [DOSBox]: http://www.dosbox.com/
+[released it for free]: http://www.doshaven.eu/programming-tools/
 
 Programs
 --------
